@@ -2,11 +2,10 @@
 <html lang="zh-cn">
   <head>
     <meta charset="utf-8" >
-    <title>姜老师的2015微信文章</title>
-<!--
-     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway:300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="style.css">
---> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>SelfOrgMap</title>
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>   
 
 <style type="text/css">
 body {background-color: white}
@@ -18,82 +17,44 @@ a:active{color:#0000FF;text-decoration:none; }
   </head>
 
 <body>
+<!--
 
-<br/>
-<br/>
-<h1><img src="./image/vstp2015.jpg" width="800" height="500" alt="Top Pic"/></h1>
 <br/>
 <hr/>
 <br/>
 <h1>
-我的2015微信文章：
-</h1><p>
+地图：
+</h1>
+<p>
+
+--> 
+
+<div id="container" style="width:500px; height:800px"></div>
+<script src="http://webapi.amap.com/maps?v=1.3&key=42c076a36dbaf7a4fedecbef34660c1c&callback=init"></script>
+<script>
+    function init(){
+        var map = new AMap.Map('container', {
+            center: [116.554309,39.912963],
+            zoom: 17
+        });
+        map.plugin(["AMap.ToolBar"], function() {
+            map.addControl(new AMap.ToolBar());
+        });
+    }
+</script>
+
+<!--
+
 <h2>
 <blockquote>01
-<a href="http://mp.weixin.qq.com/s/ZBb3pqlMjQ_i8W_cT2A-rA" style="text-decoration:none">   “设计思维”及其创新理念</a>
-</blockquote>
-</h2><p>
-<p>
-<h2>
-<blockquote>02
-<a href="http://mp.weixin.qq.com/s/WhgXSA7gtWHZswMhD2VhnA" style="text-decoration:none"> 设计思维创新体验工作坊之：神秘包裹</a>
-</blockquote>
-</h2><p>
-<p>
-<h2>
-<blockquote>03
-<a href="http://mp.weixin.qq.com/s/3p9geZ5hWJw7Ch6nzVjqWQ" style="text-decoration:none"> 设计思维助力社会创新</a>
-</blockquote>
-</h2><p>
-<p>
-<h2>
-<blockquote>04
-<a href="https://mp.weixin.qq.com/s/33F8a5Og-beMmCsveW823w" style="text-decoration:none"> 社会创新周上的设计思维工作坊</a>
-</blockquote>
-</h2>
-<h2>
-<blockquote>05
-<a href="http://mp.weixin.qq.com/s/aPb1PrdmnZTuDigofa5AfA" style="text-decoration:none"> 知识产权体系阻碍创新（之一）</a>
-</blockquote>
-</h2><p>
-<p>
-<h2>
-<blockquote>06
-<a href="http://mp.weixin.qq.com/s/zIrlPPBCFGD5YAtXKk4Rxw" style="text-decoration:none"> 知识产权体系阻碍创新（之二）</a>
-</blockquote>
-</h2><p>
-<p>
-<h2>
-<blockquote>07
-<a href="https://mp.weixin.qq.com/s/1FOfn3xPgWpXiEp74kth6Q" style="text-decoration:none"> 为什么创新主要集中在智能手机领域</a>
-</blockquote>
-</h2><p>
-<p>
-<h2>
-<blockquote>08
-<a href="http://mp.weixin.qq.com/s/h0UFmHRSOijqBIvRfZjP9g" style="text-decoration:none"> 为什么IT行业的人总是能入侵其他行业</a>
-</blockquote>
-</h2>
-<h2>
-<blockquote>09
-<a href="http://mp.weixin.qq.com/s/CKo8pIHolzWE2IapacEQTw" style="text-decoration:none"> 知识产权体系阻碍创新（之三）</a>
-</blockquote>
-</h2><p>
-<p>
-<h2>
-<blockquote>10
-<a href="http://mp.weixin.qq.com/s/rGJwzq5D_hDStG5IyCfVOQ" style="text-decoration:none"> 知识产权体系阻碍创新（之四）</a>
+<a href="https://jianghao333.github.io" style="text-decoration:none">  回到主页</a>
 </blockquote>
 </h2><p>
 <p>
 
 <br/>
 
-<!--
-  	<div class="container">
-  		<h1>An Unexpected Journey of DT</h1>
-  	  <a class="btn" href="#">Get Started</a>
-  	</div>
 --> 
+
   </body>
 </html>
