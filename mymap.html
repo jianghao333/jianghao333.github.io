@@ -56,6 +56,22 @@ a:active{color:#0000FF;text-decoration:none; }
                 offset: new AMap.Pixel(20, 20),//修改label相对于maker的位置
                 content: "西街公园咖啡"
             });
+            marker2 = new AMap.Marker({
+                map:map,
+                position:[116.557617,39.915341]
+            })
+            marker2.setLabel({
+                offset: new AMap.Pixel(20, 20),//修改label相对于maker的位置
+                content: "传媒大咖"
+            });
+              marker3 = new AMap.Marker({
+                map:map,
+                position:[116.553953,39.912255]
+            })
+            marker3.setLabel({
+                offset: new AMap.Pixel(20, 20),//修改label相对于maker的位置
+                content: "大书房咖啡"
+            });
         
     map.plugin('AMap.Geolocation', function() {
         geolocation = new AMap.Geolocation({
