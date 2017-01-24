@@ -47,6 +47,16 @@ a:active{color:#0000FF;text-decoration:none; }
         resizeEnable: true,
         zoom:16
     });
+    
+            marker = new AMap.Marker({
+                map:map,
+                position:[116.559065,39.91439]
+            })
+            marker.setLabel({
+                offset: new AMap.Pixel(20, 20),//修改label相对于maker的位置
+                content: "西街公园咖啡"
+            });
+        
     map.plugin('AMap.Geolocation', function() {
         geolocation = new AMap.Geolocation({
             enableHighAccuracy: true,//是否使用高精度定位，默认:true
@@ -73,6 +83,7 @@ a:active{color:#0000FF;text-decoration:none; }
     function onError(data) {
         document.getElementById('tip').innerHTML = '定位失败';
     }
+  
 </script>
 
   </body>
